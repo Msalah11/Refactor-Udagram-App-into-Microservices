@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: kufalb/reverseproxy
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: kufalb/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed  
+    image: kufalb/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend  
+    image: kufalb/udacity-frontend:local
