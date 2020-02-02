@@ -9,7 +9,7 @@ A basic Ionic client web application which consumes the RestAPI Backend.
 3. [The RestAPI User Backend](/udacity-c3-restapi-user), a Node-Express user microservice.
 
 ## Tasks
-###Setup Docker Environment
+### Setup Docker Environment
 You'll need to install docker https://docs.docker.com/install/. Open a new terminal within the project directory and run:
 1. Switch the folder
 ```$xslt
@@ -24,7 +24,7 @@ docker-compose -f docker-compose-build.yaml push
 ```$xslt
 docker-compose up
 ```
-###Setup k8s Environment
+### Setup k8s Environment
 1. Create the cluster
 ```$xslt
 eksctl create cluster --name udagram
